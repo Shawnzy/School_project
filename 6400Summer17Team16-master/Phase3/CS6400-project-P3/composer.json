@@ -1,0 +1,24 @@
+{
+    "name": "gt6400P3/myproject",
+    "description": "CS6400-project-ASACS-Summer2017",
+    "keywords": [ASACS, Atlanta Sharing Alliance Coordination System, Georgia Institute Of Technology, CS6400],
+    "homepage": "http://asacs.gt6400summer17.com",
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "MyProject\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyProject\\Test\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^5.6|^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    }
+}

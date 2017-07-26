@@ -1,0 +1,119 @@
+-- Inserts Client
+INSERT INTO `cs6400_sp17_team016`.`Client` (`client_sid`, `firstname`, `lastname`, `id_num`, `id_type`, `phone_num`, `gender`) VALUES ('1', 'fran', 'duran', '12345', 'license', '4048894906', 'M');
+INSERT INTO `cs6400_sp17_team016`.`Client` (`client_sid`, `firstname`, `lastname`, `id_num`, `id_type`, `phone_num`, `gender`) VALUES ('2', 'cisco', 'glez', '23456', 'license', '6785937140', 'M');
+INSERT INTO `cs6400_sp17_team016`.`Client` (`client_sid`, `firstname`, `lastname`, `id_num`, `id_type`, `phone_num`, `gender`) VALUES ('3', 'francis', 'fuentes', '34567', 'license', '1234567890', 'F');
+commit;
+
+-- Inserts Site
+INSERT INTO `cs6400_sp17_team016`.`Site` (`site_sid`, `short_name`, `st_number`, `street`, `city`, `state`, `zip_code`, `marked_for_deletion`, `primary_phone_num`) VALUES ('1', 'Centennial', '210', 'Pine St', 'Atlanta', 'GA', '30308', '0', '1234567890');
+INSERT INTO `cs6400_sp17_team016`.`Site` (`site_sid`, `short_name`, `st_number`, `street`, `city`, `state`, `zip_code`, `marked_for_deletion`, `primary_phone_num`) VALUES ('2', 'Midtown', '100', '10th St', 'Atlanta', 'GA', '30309', '0', '2345678901');
+INSERT INTO `cs6400_sp17_team016`.`Site` (`site_sid`, `short_name`, `st_number`, `street`, `city`, `state`, `zip_code`, `marked_for_deletion`, `primary_phone_num`) VALUES ('3', 'Downtown', '116', 'Ponce de Leon', 'Atlanta', 'GA', '30308', '0', '3456789012');
+INSERT INTO `cs6400_sp17_team016`.`Site` (`site_sid`, `short_name`, `st_number`, `street`, `city`, `state`, `zip_code`, `marked_for_deletion`, `primary_phone_num`) VALUES ('4', 'Atlanta', '1234', 'Calle 3', 'Atlanta', 'GA', '23454', '0', '4567890123');
+INSERT INTO `cs6400_sp17_team016`.`Site` (`site_sid`, `short_name`, `st_number`, `street`, `city`, `state`, `zip_code`, `marked_for_deletion`, `primary_phone_num`) VALUES ('5', 'Peach', '4321', 'Calle 2', 'Atlanta', 'GA', '12345', '0', '5678901234');
+commit;
+
+-- Inserts SoupKitchen
+INSERT INTO `cs6400_sp17_team016`.`SoupKitchen` (`site_sid`, `seat_count`, `description`, `hours_of_op`, `conditions_of_use`) VALUES ('1', '30', 'Soup Kitchen', '8am-9am', 'Need to bring ID');
+INSERT INTO `cs6400_sp17_team016`.`SoupKitchen` (`site_sid`, `seat_count`, `description`, `hours_of_op`, `conditions_of_use`) VALUES ('2', '45', 'Soup Kitchen', '11am-7pm', 'Need to bring ID');
+INSERT INTO `cs6400_sp17_team016`.`SoupKitchen` (`site_sid`, `seat_count`, `description`, `hours_of_op`, `conditions_of_use`) VALUES ('3', '20', 'Soup Kitchen', '11am-6pm', 'Need to bring ID');
+commit;
+
+-- Inserts FoodBank
+INSERT INTO `cs6400_sp17_team016`.`FoodBank` (`site_sid`,`item_name`,`units_num`) VALUES ('1','apples',100);
+INSERT INTO `cs6400_sp17_team016`.`FoodBank` (`site_sid`,`item_name`,`units_num`) VALUES ('2','bananas',100);
+INSERT INTO `cs6400_sp17_team016`.`FoodBank` (`site_sid`,`item_name`,`units_num`) VALUES ('3','bread',100);
+INSERT INTO `cs6400_sp17_team016`.`FoodBank` (`site_sid`,`item_name`,`units_num`) VALUES ('4','ham',100);
+INSERT INTO `cs6400_sp17_team016`.`FoodBank` (`site_sid`,`item_name`,`units_num`) VALUES ('4','apples',100);
+INSERT INTO `cs6400_sp17_team016`.`FoodBank` (`site_sid`,`item_name`,`units_num`) VALUES ('3','bananas',100);
+INSERT INTO `cs6400_sp17_team016`.`FoodBank` (`site_sid`,`item_name`,`units_num`) VALUES ('2','bread',100);
+INSERT INTO `cs6400_sp17_team016`.`FoodBank` (`site_sid`,`item_name`,`units_num`) VALUES ('1','ham',100);
+commit;
+
+-- Inserts Shelter
+INSERT INTO `cs6400_sp17_team016`.`Shelter` (`site_sid`, `male_bunk_num`, `female_bunk_num`, `mixed_bunk_num`) VALUES ('1', '20', '20', '20');
+INSERT INTO `cs6400_sp17_team016`.`Shelter` (`site_sid`, `male_bunk_num`, `female_bunk_num`, `mixed_bunk_num`) VALUES ('2', '20', '20', '20');
+INSERT INTO `cs6400_sp17_team016`.`Shelter` (`site_sid`, `male_bunk_num`, `female_bunk_num`, `mixed_bunk_num`) VALUES ('3', '20', '20', '20');
+INSERT INTO `cs6400_sp17_team016`.`Shelter` (`site_sid`, `male_bunk_num`, `female_bunk_num`, `mixed_bunk_num`) VALUES ('4', '20', '20', '20');
+INSERT INTO `cs6400_sp17_team016`.`Shelter` (`site_sid`, `male_bunk_num`, `female_bunk_num`, `mixed_bunk_num`) VALUES ('5', '20', '20', '20');
+commit;
+
+--Inserts FoodPantry
+INSERT INTO `cs6400_sp17_team016`.`FoodPantry` (`site_sid`) VALUES ('1');
+INSERT INTO `cs6400_sp17_team016`.`FoodPantry` (`site_sid`) VALUES ('2');
+INSERT INTO `cs6400_sp17_team016`.`FoodPantry` (`site_sid`) VALUES ('3');
+INSERT INTO `cs6400_sp17_team016`.`FoodPantry` (`site_sid`) VALUES ('4');
+INSERT INTO `cs6400_sp17_team016`.`FoodPantry` (`site_sid`) VALUES ('5');
+commit;
+
+-- Inserts ClientServices
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodBank', '1', 'N/A', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodPantry', '1', '8am-8pm', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('Shelter', '1', '8pm-8am', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('SoupKitchen', '1', '11am-2pm', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodBank', '2', 'N/A', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodPantry', '2', '8am-8pm', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('Shelter', '2', '8pm-8am', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('SoupKitchen', '2', '11am-2pm', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodBank', '3', 'N/A', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodPantry', '3', '8am-8pm', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('Shelter', '3', '8pm-8am', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('SoupKitchen', '3', '11am-2pm', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodBank', '4', 'N/A', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodPantry', '4', '8am-8pm', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('Shelter', '4', '8pm-8am', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('SoupKitchen', '4', '11am-2pm', 'ID needed');
+INSERT INTO `cs6400_sp17_team016`.`ClientServices` (`service_type`, `site_sid`, `hours_of_op`, `conditions_of_use`) VALUES ('FoodPantry', '5', '8am-8pm', 'ID needed');
+commit;
+
+-- Inserts User
+INSERT INTO `cs6400_sp17_team016`.`User` (`username`, `site_sid`, `password`, `firstname`, `lastname`, `email`) VALUES ('fgalindo', '1', 'password', 'Francisco', 'Galindo', 'fgalindo@mail.com');
+INSERT INTO `cs6400_sp17_team016`.`User` (`username`, `site_sid`, `password`, `firstname`, `lastname`, `email`) VALUES ('fran', '1', 'password', 'Fran', 'Duran', 'fran@mail.com');
+INSERT INTO `cs6400_sp17_team016`.`User` (`username`, `site_sid`, `password`, `firstname`, `lastname`, `email`) VALUES ('cisco', '2', 'password', 'Cisco', 'Fuentes', 'cisco@mail.com');
+INSERT INTO `cs6400_sp17_team016`.`User` (`username`, `site_sid`, `password`, `firstname`, `lastname`, `email`) VALUES ('john3', '3', 'password', 'John', 'Doe', 'john3@mail.com');
+INSERT INTO `cs6400_sp17_team016`.`User` (`username`, `site_sid`, `password`, `firstname`, `lastname`, `email`) VALUES ('mark5', '4', 'password', 'Mark', 'Marksen', 'mark5@mail.com');
+INSERT INTO `cs6400_sp17_team016`.`User` (`username`, `site_sid`, `password`, `firstname`, `lastname`, `email`) VALUES ('kbandlow', '5', 'password', 'Kiki', 'Bandlow', 'kbandlow@mail.com');
+commit;
+
+-- Inserts UsageLog
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2015-10-30',NULL,'3');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog`(`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('1','2015-10-30',NULL,'1');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2016-10-02',NULL,'3');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('1','2015-10-02',NULL,'1');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2015-10-04',NULL,'2');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2016-10-05',NULL,'3');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('1','2015-10-06',NULL,'1');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2015-10-07',NULL,'2');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2016-10-08',NULL,'3');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('1','2015-10-09',NULL,'1');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2015-10-10',NULL,'2');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2016-10-11',NULL,'3');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('1','2015-10-12',NULL,'1');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2015-10-13',NULL,'2');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2016-10-14',NULL,'3');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('1','2015-10-15',NULL,'1');
+INSERT INTO `cs6400_sp17_team016`.`UsageLog` (`client_sid`,`date_time_stamp`,`notes`,`site_sid`) VALUES ('2','2015-10-16',NULL,'2');
+commit;
+
+-- Inserts Item
+INSERT INTO `cs6400_sp17_team016`.`Item` (`item_name`, `storage_type`, `exp_date`) VALUES ('apples', 'refrigerated', '2017-07-21');
+INSERT INTO `cs6400_sp17_team016`.`Item` (`item_name`, `storage_type`, `exp_date`) VALUES ('bananas', 'dry good', '2017-07-21');
+INSERT INTO `cs6400_sp17_team016`.`Item` (`item_name`, `storage_type`, `exp_date`) VALUES ('bread', 'refrigerated', '2017-07-21');
+INSERT INTO `cs6400_sp17_team016`.`Item` (`item_name`, `storage_type`, `exp_date`) VALUES ('tooth paste', 'dry good', NULL);
+INSERT INTO `cs6400_sp17_team016`.`Item` (`item_name`, `storage_type`, `exp_date`) VALUES ('ham', 'refrigerated', '2017-07-21');
+commit;
+
+-- Inserts Food
+INSERT INTO `cs6400_sp17_team016`.`Food` (`item_name`, `food_category`) VALUES ('apples', 'fruit');
+INSERT INTO `cs6400_sp17_team016`.`Food` (`item_name`, `food_category`) VALUES ('bananas', 'fruit');
+INSERT INTO `cs6400_sp17_team016`.`Food` (`item_name`, `food_category`) VALUES ('bread', 'grains');
+INSERT INTO `cs6400_sp17_team016`.`Food` (`item_name`, `food_category`) VALUES ('ham', 'deli');
+commit;
+
+-- Insert Supplies
+INSERT INTO `cs6400_sp17_team016`.`Supplies` (`item_name`, `supply_category`) VALUES ('tooth paste', 'personal hygiene');
+commit;
+
+-- Insert Requests
+INSERT INTO `cs6400_sp17_team016`.`Request` (`item_name`, `site_sid`, `item_qty`, `status`) VALUES ('apples', '1', '20', 'pending');
+INSERT INTO `cs6400_sp17_team016`.`Request` (`item_name`, `site_sid`, `item_qty`, `status`) VALUES ('bananas', '2', '30', 'pending');
+commit;
