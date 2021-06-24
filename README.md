@@ -8,8 +8,6 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/PHP-DI/PHP-DI.svg?style=flat-square)](https://packagist.org/packages/PHP-DI/php-di)
 
 
-## Why?
-
 
 ## Installation
 
@@ -21,7 +19,7 @@ How to install the project/library/framework/...
 How to use...
 
 ```bash
-git clone https://github.gatech.edu/fgfjg3/6400Summer17Team16/Phase3/CS6400-project-P3 cd CS6400-project-P3
+git clone https://github.com/Shawnzy/social_welfare_database_design.git
 # Remove the git repository metadata
 rm -rf .git/
 # Start a new repository
